@@ -10,7 +10,7 @@ import uni.fmi.login.model.LoginScreenModel;
 
 public class LoginSteps {
 	private LoginScreenModel loginModel;
-	
+
 	@Given("^User opens a screen for login$")
 	public void openLoginScreen() throws Throwable {
 		loginModel = new LoginScreenModel();
@@ -34,6 +34,22 @@ public class LoginSteps {
 	@Then("^sees succesful login screen$")
 	public void showSuccess() throws Throwable {
 		assertEquals("Successful login", loginModel.getMessage());
+	}
+
+	@Then("^sees error message$")
+	public void checkForMissingDataMessage() throws Throwable {
+		assertEquals("Enter username and password.", loginModel.getMessage());
+
+	}
+
+	@When("^inputs wrong username$")
+	public void inputWrongUsername() throws Throwable {
+		loginModel.setUsername("anastasija");
+	}
+
+	@Then("^sees error message for wrong credentials$")
+	public void showWrongCredentialsMsg() throws Throwable {
+		assertEquals("Wrong username and/or password.", loginModel.getMessage());
 	}
 
 }
