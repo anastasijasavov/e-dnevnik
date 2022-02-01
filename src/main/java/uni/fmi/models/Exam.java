@@ -13,6 +13,17 @@ public class Exam {
 
 	}
 
+	public Exam( Subject subject, Set<Grade> grades) {
+		this.subject = subject;
+		this.grades = grades;
+	}
+	
+	public Exam(String date, String name, Subject subject, Set<Grade> grades) {
+		this.name= name;
+		this.examDate = date;
+		this.subject = subject;
+		this.grades = grades;
+	} 
 	/**
 	 * @return
 	 */

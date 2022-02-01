@@ -11,7 +11,7 @@ public class Student extends User {
     private Set<Grade> grades;
     private Class klas;
     private Set<Parent> parents;
-
+    
     /**
      * Default constructor
      */

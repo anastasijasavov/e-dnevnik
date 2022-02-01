@@ -17,6 +17,18 @@ public class Grade {
     public Grade() {
     }
 
+    public Grade(int value, String date, Student student, Exam exam) {
+    	this.gradeValue = value;
+    	this.inputDate = date;
+    	this.student = student;
+    	this.exam = exam;
+    }
+    
+    public Grade(int value, Student student) {
+    	this.gradeValue = value;
+    	this.student = student;
+    }
+    
     
     /**
      * @return

@@ -16,14 +16,14 @@ public class LoginSteps {
 		loginModel = new LoginScreenModel();
 	}
 
-	@When("^inputs username$")
-	public void addUsername() throws Throwable {
-		loginModel.setUsername("anastasijasavov");
+	@When("^inputs username: \"([^\"]*)\"$")
+	public void addUsername(final String username) throws Throwable {
+		loginModel.setUsername(username);
 	}
 
-	@When("^inputs pass$")
-	public void addPassword() throws Throwable {
-		loginModel.setPassword("p4ssw0rd");
+	@When("^inputs pass: \"([^\"]*)\"$")
+	public void addPassword(final String pass) throws Throwable {
+		loginModel.setPassword(pass);
 	}
 
 	@When("^clicks on login button$")
@@ -31,25 +31,11 @@ public class LoginSteps {
 		loginModel.clickLogin();
 	}
 
-	@Then("^sees succesful login screen$")
-	public void showSuccess() throws Throwable {
-		assertEquals("Successful login", loginModel.getMessage());
+	@Then("^sees: \"([^\"]*)\"$")
+	public void showSuccess(final String message) throws Throwable {
+		assertEquals(message, loginModel.getMessage());
 	}
 
-	@Then("^sees error message$")
-	public void checkForMissingDataMessage() throws Throwable {
-		assertEquals("Enter username and password.", loginModel.getMessage());
-
-	}
-
-	@When("^inputs wrong username$")
-	public void inputWrongUsername() throws Throwable {
-		loginModel.setUsername("anastasija");
-	}
-
-	@Then("^sees error message for wrong credentials$")
-	public void showWrongCredentialsMsg() throws Throwable {
-		assertEquals("Wrong username and/or password.", loginModel.getMessage());
-	}
+	
 
 }

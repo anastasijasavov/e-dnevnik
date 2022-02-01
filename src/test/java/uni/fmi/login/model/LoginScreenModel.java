@@ -21,7 +21,7 @@ public class LoginScreenModel {
 		this.password= pass;
 	}
 
-	public Object getMessage() {
+	public String getMessage() {
 		return message;
 	}
 

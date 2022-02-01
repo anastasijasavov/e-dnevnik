@@ -18,6 +18,15 @@ public class Subject {
     public Subject() {
     }
 
+    public Subject(String name) {
+    	this.name = name;
+    }
+    
+    public Subject(String name,Set<Class> classes, Set<Teacher> teachers) {
+    	this.name = name;
+    	this.teachers = teachers;
+    	this.classes = classes;
+    }
 
     /**
      * @return
