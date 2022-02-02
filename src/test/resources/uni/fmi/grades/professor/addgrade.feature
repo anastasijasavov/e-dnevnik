@@ -1,23 +1,23 @@
 
 Feature: Set grade
  
-  @tag1
-  Scenario: Title of your scenario
-    Given I want to write a step with precondition
-    And some other precondition
-    When I complete action
-    And some other action
-    And yet another action
-    Then I validate the outcomes
-    And check more outcomes
-
-  @tag2
-  Scenario Outline: Title of your scenario outline
-    Given I want to write a step with <name>
-    When I check for the <value> in step
-    Then I verify the <status> in step
+  Background: 
+  	Given teacher is logged in
+    And clicks add grade button
+  
+  
+  Scenario Outline: Teacher sets grade to a student
+    When inputs students index: "<index>"
+    And inputs grade: "<grade>"
+    And inputs exam name: "<exam>"
+    And inputs subject: "<subject>"
+		Then show message: "<message>"
 
     Examples: 
-      | name  | value | status  |
-      | name1 |     5 | success |
-      | name2 |     7 | Fail    |
+      | index      | grade | exam  |   subject   |  message               |
+      | 1901111096 |     5 | Test2 |  Mechanics  |  Success               | 
+      | 1901321096 |     7 | Test2 |  Mechanics  | Enter a valid grade    |
+			| 1901321096 |       | Test2 |  Mechanics  | Please enter a grade   |
+			| 1901321096 |   4.5 | Test3 |  History    | Enter a whole number   |
+			
+			      
