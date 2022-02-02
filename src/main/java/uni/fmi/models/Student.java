@@ -7,7 +7,7 @@ import java.util.*;
 public class Student extends User {
 
     
-    private int facultyNumber;
+    private int index;
     private Set<Grade> grades;
     private Class klas;
     private Set<Parent> parents;
@@ -38,16 +38,16 @@ public class Student extends User {
     /**
      * @return
      */
-    public int getFacultyNo() {
-        return this.facultyNumber;
+    public int getIndex() {
+        return this.index;
     }
 
     /**
      * @param facultyNumber 
      * @return
      */
-    public void setFacultyNo(int facultyNumber) {
-        this.facultyNumber=facultyNumber;
+    public void setIndex(int facultyNumber) {
+        this.index=facultyNumber;
     }
 
     /**

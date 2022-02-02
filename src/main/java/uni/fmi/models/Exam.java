@@ -19,6 +19,10 @@ public class Exam {
 		//this.grades = grades;
 	}
 	
+//	public Exam(Subject subject) {
+//		this.subject = subject;
+//	}
+//	
 	public Exam(String date, String name, Subject subject) {
 		this.name= name;
 		this.examDate = date;

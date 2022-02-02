@@ -37,7 +37,7 @@ public class Parent extends User {
 
             for(Student st: this.students){
                 
-                if(st.getFacultyNo()==student.getFacultyNo()){
+                if(st.getIndex()==student.getIndex()){
                     grades = st.getGrades();
                 }    
             }
