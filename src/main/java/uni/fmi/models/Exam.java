@@ -7,22 +7,23 @@ public class Exam {
 	private String examDate;
 	private String name;
 	private Subject subject;
-	private Set<Grade> grades;
+	//private Set<Grade> grades;
 
 	public Exam() {
 
 	}
 
-	public Exam( Subject subject, Set<Grade> grades) {
+	public Exam(String name, Subject subject) {
+		this.name= name;
 		this.subject = subject;
-		this.grades = grades;
+		//this.grades = grades;
 	}
 	
-	public Exam(String date, String name, Subject subject, Set<Grade> grades) {
+	public Exam(String date, String name, Subject subject) {
 		this.name= name;
 		this.examDate = date;
 		this.subject = subject;
-		this.grades = grades;
+		//this.grades = grades;
 	} 
 	/**
 	 * @return
@@ -69,11 +70,11 @@ public class Exam {
 		this.subject = subj;
 	}
 
-	public Set<Grade> getGrades() {
-		return this.grades;
-	}
-
-	public void setGrades(Set<Grade> grades) {
-		this.grades = grades;
-	}
+//	public Set<Grade> getGrades() {
+//		return this.grades;
+//	}
+//
+//	public void setGrades(Set<Grade> grades) {
+//		this.grades = grades;
+//	}
 }

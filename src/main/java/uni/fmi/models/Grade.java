@@ -24,11 +24,6 @@ public class Grade {
     	this.exam = exam;
     }
     
-    public Grade(int value, Student student) {
-    	this.gradeValue = value;
-    	this.student = student;
-    }
-    
     
     /**
      * @return

@@ -1,4 +1,4 @@
-package uni.fmi.student.grades;
+package uni.fmi.grades.student;
 
 import org.junit.runner.RunWith;
 
