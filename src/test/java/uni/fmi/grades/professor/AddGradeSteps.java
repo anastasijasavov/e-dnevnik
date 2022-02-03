@@ -12,10 +12,10 @@ public class AddGradeSteps {
 
 	private AddGradeModel addGradeModel;
 	
-	@Given("^teacher is logged in$")
-	public void checkLogin() throws Throwable {
-	    
-	}
+//	@Given("^teacher is logged in$")
+//	public void checkLogin() throws Throwable {
+//	    
+//	}
 
 	@Given("^show grade form$")
 	public void showGradeForm() throws Throwable {

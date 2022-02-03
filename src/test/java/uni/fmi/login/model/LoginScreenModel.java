@@ -26,6 +26,6 @@ public class LoginScreenModel {
 	}
 
 	public void clickLogin() {
-		message= LoginService.login(username, password);
+		message = LoginService.login(username, password);
 	}
 }

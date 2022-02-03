@@ -31,7 +31,7 @@ public class LoginSteps {
 		loginModel.clickLogin();
 	}
 
-	@Then("^sees: \"([^\"]*)\"$")
+	@Then("^show message: \"([^\"]*)\"$")
 	public void showSuccess(final String message) throws Throwable {
 		assertEquals(message, loginModel.getMessage());
 	}

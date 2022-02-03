@@ -7,8 +7,9 @@ public class Exam {
 	private String examDate;
 	private String name;
 	private Subject subject;
-	//private Set<Grade> grades;
+	private Set<Grade> grades;
 
+	
 	public Exam() {
 
 	}
@@ -74,11 +75,11 @@ public class Exam {
 		this.subject = subj;
 	}
 
-//	public Set<Grade> getGrades() {
-//		return this.grades;
-//	}
-//
-//	public void setGrades(Set<Grade> grades) {
-//		this.grades = grades;
-//	}
+	public Set<Grade> getGrades() {
+		return this.grades;
+	}
+
+	public void setGrades(Set<Grade> grades) {
+		this.grades = grades;
+	}
 }

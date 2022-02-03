@@ -2,8 +2,7 @@
 Feature: Set grade
  
   Background: 
-  	Given teacher is logged in
-    And show grade form
+  	Given show grade form
   
   
   Scenario Outline: Teacher sets grade to a student
@@ -17,8 +16,9 @@ Feature: Set grade
     Examples: 
       | index      | grade | exam  |  subject   |  message               |
       | 1901111096 |     5 | Test2 | Mechanics  |  Success               | 
-      | 1901321096 |     7 | Test2 | Mechanics  | Enter a valid grade    |
-			| 1901321096 |       | Test2 | Mechanics  | Please enter a grade   |
-			| 1901321096 |   4.5 | Test3 | Mechanics  | Enter a whole number   |
+      | 1901111096 |     7 | Test2 | Mechanics  | Enter a valid grade    |
+			| 1901111096 |       | Test2 | Mechanics  | Please enter a grade   |
+			| 1901111096 |   4.5 | Test3 | Mechanics  | Enter a whole number   |
+			| 1901222105 |   3   | Test2 | Mechanics  | Student doesnt exist   |
 			
 			      

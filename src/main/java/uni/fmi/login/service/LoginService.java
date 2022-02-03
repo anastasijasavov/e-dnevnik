@@ -11,9 +11,15 @@ public class LoginService {
 	
 	public static String login(String username, String password) {
 		
-		if(password == null || username == null)
+		if((username == null || username.isBlank()) && (password == null || password.isBlank()))
 			return "Enter username and password.";
 		
+		
+		if(password == null || password.isBlank())
+			return "Enter password";
+		
+		if(username == null || username.isBlank())
+			return "Enter username";
 		
 		boolean userExists = usersDB.stream()
 				.anyMatch(u->u.getUsername().equals(username) && u.getPass().equals(password));

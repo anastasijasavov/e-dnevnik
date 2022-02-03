@@ -43,6 +43,7 @@ public class GradePanelService {
 		
 		subjectsDB.add(new Subject("Mechanics"));
 		subjectsDB.add(new Subject("History"));
+		
 		 Exam exam = new Exam("Test1", subjectsDB.get(0));
 		 Grade grade = new Grade(6, "26/01/2020", studentsDB.get(0), exam);
 		gradesDB.add(grade);
