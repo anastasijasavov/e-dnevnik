@@ -17,7 +17,7 @@ public class AddGradeSteps {
 //	    
 //	}
 
-	@Given("^show grade form$")
+	@Given("^grade form shown$")
 	public void showGradeForm() throws Throwable {
 	     addGradeModel = new AddGradeModel();
 	}
@@ -26,7 +26,7 @@ public class AddGradeSteps {
 	public void setIndex(String index) throws Throwable {
 	   addGradeModel.setIndex(index);
 	}
-
+	
 	@When("^inputs grade: \"([^\"]*)\"$")
 	public void setGrade(String grade) throws Throwable {
 	    addGradeModel.setGrade(grade);

@@ -23,7 +23,7 @@ public class GradePanelSteps {
 	public void clickSubjectButton(final String subjName) throws Throwable {
 		
 		gradeModel.clickSubject(subjName);
-		//selectedSubject = new Subject(subjName);
+		
 	}
 
 	@Then("^show grades from subject$")

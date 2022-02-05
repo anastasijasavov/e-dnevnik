@@ -2,7 +2,7 @@
 Feature: Set grade
  
   Background: 
-  	Given show grade form
+  	Given grade form shown
   
   
   Scenario Outline: Teacher sets grade to a student
