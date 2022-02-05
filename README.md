@@ -1,2 +1,2 @@
 # e-dnevnik
-![ednevnik-img](https://user-images.githubusercontent.com/75385445/152071008-c8d5ee91-e27c-4ba4-b239-34b6fcb83f4c.jpg)
+![ednevnik-image](https://user-images.githubusercontent.com/75385445/152338398-232ebf43-32e9-4046-b1cf-ef20021b576d.jpg)
